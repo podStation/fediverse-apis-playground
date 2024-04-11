@@ -1,0 +1,15 @@
+meta {
+  name: Activitiy
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{activity-url}}
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
+}
