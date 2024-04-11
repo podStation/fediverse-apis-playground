@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: 
+  url: {{instance-url}}/.well-known/webfinger?resource=acct:{{account}}
   body: none
   auth: none
+}
+
+query {
+  resource: acct:{{account}}
 }
